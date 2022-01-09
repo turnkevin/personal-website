@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #6495ed;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/*********************/
+/*general Reusable component*/
+/*********************/
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-center-v {
+  align-items: center;
+}
+
+.heading-primary,
+.heading-sectiondary {
+  font-weight: 700;
+  color: #324b77;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-sectiondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 4.6rem;
+}
+
+.heading-tertiary {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.task-perform {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #6495ed;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: #74a0ef;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  display: inline-block;
+  transition: all 0.3s;
+  font-weight: 600;
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+  text-align: center;
+  line-height: 11rem;
+
+  /* Only for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #74a0ef;
+  margin-right: 1.6rem;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #5a86d5;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #6495ed;
+  margin-right: 1.6rem;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #74a0ef;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--contact:link,
+.btn--contact:visited {
+  background-color: #4668a6;
+}
+
+.btn--contact:hover,
+.btn--contact:active {
+  background-color: #5a86d5;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #324b77;
+}
+
+.link {
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 0.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.margin-top-md {
+  margin-top: 4.8rem !important;
+}
+
+.onlinecv {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.skillsheading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 3rem;
+  color: black;
+}
+
+.skillsheading-sectiondary {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #5a86d5;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #324b77;
+  border-bottom: 1px solid transparent;
+}
+
+.frontend:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+  align-self: end;
+}
